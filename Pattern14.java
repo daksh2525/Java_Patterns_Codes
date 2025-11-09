@@ -1,26 +1,34 @@
 package Revision;
 
-public class Pattern13 {
+public class Pattern14 {
    public static void main(String[] args) {
     int row = 1;
     int n = 5;
     int star = 1;
+    int space = n-1;
     while (row<=2*n-1) {
         int i = 1;
-        while (i<=star) {
-            System.out.print("* ");
+         while (i<=space) {
+            System.out.print("  ");
             i++;
         }
-        // Mirroring 
+        int j = 1;
+        while (j<=star) {
+            System.out.print("* ");
+            j++;
+        }
         if(row<n){
             star++;
+            space--;
         }
         else{
             star--;
+            space++;
         }
-
-        // next line prev
+       
+       
         row++;
+       
        System.out.println("");
     }
    }

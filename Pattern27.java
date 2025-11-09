@@ -1,6 +1,6 @@
 package Revision;
 
-public class Pattern23 {
+public class Pattern27 {
     public static void main(String[] args) {
         int n = 5;
         int row = 1;
@@ -13,9 +13,18 @@ public class Pattern23 {
             i++;
            }
            int j = 1;
+           int val = 1;
            while (j<=star) {
-            System.out.print("1 ");
+            System.out.print(" "+val);
+            if(j<star/2+1){
+               val++;
+            }
+            else{
+                val--;
+            }
             j++;
+            
+           
            }
            // next line prev
            space--;

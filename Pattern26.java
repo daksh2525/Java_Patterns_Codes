@@ -13,11 +13,12 @@ public class Pattern26 {
             i++;
            }
            int j = 1;
-           int k = row;
+           int val = 1;
            while (j<=star) {
-            System.out.print(" "+j);
+            System.out.print(" "+val);
             j++;
-            k++;
+            val++;
+           
            }
            // next line prev
            space--;
